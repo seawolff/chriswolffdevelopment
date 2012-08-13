@@ -1,4 +1,3 @@
-chriswolffdevelopment
-=====================
+#This is my [soon-to-be] website revamp
 
-My personal home on the interwebs
+##Feel free to ignore for now
