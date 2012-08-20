@@ -1,3 +1,1 @@
-#This is my [soon-to-be] website revamp
-
-##Feel free to ignore for now
+my soon-to-be homepage.
