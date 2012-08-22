@@ -8,40 +8,96 @@
 */
 
 /* --------------------------------- Config --------------------------------- */
-@import "../normalize.css/normalize";
+@import: "../normalize.css/";
 
-@colaborate: "colaborate","Helvetica Neue",Helvetica,Calibri,Arial,clean,sans-serif;
-@etica: "etica-display","Helvetica Neue",Helvetica,Calibri,Arial,clean,sans-serif;
-
-a,
-a:active,
-a:hover,
-a:visited {
-	color:#000;
+.transition() {
+	-webkit-transition: width 400ms linear;
+	-moz-transition: width 1400ms ease-in-out;
+	-ms-transition: width 1400ms ease-in-out;
+	-o-transition: width 1400ms ease-in-out;
+	transition: width 1400ms ease-in-out;
 }
+.stop-transition() {
+		-webkit-transition: none;
+		-moz-transition: none;
+		-ms-transition: none;
+		-o-transition: none;
+		transition: none;
+}
+
+@shadow-blue:#5E8FC0;
 
 /* ------------------------------ Page Styles ------------------------------ */
 
-#head {
-	background-color:white;
-	-webkit-box-shadow: 0px 2px 5px #b7b9bb ;
-	-moz-box-shadow: 0px 2px 5px #b7b9bb;
-	box-shadow: 0px 2px 5px #b7b9bb;
-	#logo {
-		padding:10px;
-	} #logo a {
-		text-decoration: none;
-	} h1 {
-		margin:0;
-		font-family: @etica;
+body
+{
+	background-color:#000;
+	color:#fff;
+	font-family: Helvetica,Georgia,sans-serif;
+	margin:0;
+} a, a:visited, a:hover, a:active {
+	text-decoration: none;
+	color: @shadow-blue;
+	font-size:17px;
+}
+
+#container {
+	padding-left: 20px;
+	padding-right: 20px;
+	.stop-transition();
+}
+
+header#top {
+	font-size:3em;
+
+	span.author {
+		display: block;
+		color:@shadow-blue
+	}
+}
+
+section#intro {
+	p {
+		margin:30px auto;
+		line-height: 25px;
 	}
 }
 
 .sevensixtyeight() {
-    
+	#container {
+		width:700px;
+		margin:0 auto;
+		.transition();
+	}
+
+    header#top {
+
+		font-size: 5em;
+		text-align: center;
+    }
+
+    section#intro {
+    	p {
+    		line-height: 30px;
+    		font-size:17px;
+    	}
+    }
 } 
 .ninesixty() {
+	#container {
+		width:900px;
+	}
 
+	header#top {
+		width: 700px;
+		margin:0 auto;
+		text-align: left;
+	}
+
+	section#intro {
+		width:750px;
+		margin: 0 auto;
+	}
 }
 
 @media(min-width: 768px) {
